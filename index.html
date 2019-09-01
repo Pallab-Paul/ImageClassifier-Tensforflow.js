@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+  </head>
+  <body>
+    <table>
+      <td>
+        <tr> <h1>This is a simple image classifier</h1></tr>
+      </td>
+      <td>
+        <tr><h3>Please put any object closer to the webcam to classify</h3></tr>
+      </td>
+      <td>
+        <tr><video autoplay playsinline muted id="webcam" width="224" height="224"></video></tr>
+      </td>
+      <td>
+        <tr><div id="console"></div></tr>
+      </td>
+    </table>   
+    
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
